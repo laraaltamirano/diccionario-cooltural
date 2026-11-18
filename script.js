@@ -34,7 +34,11 @@ function updateCompanionPositions() {
       "card-companion--layout-hidden"
     );
 
-    if (columns === 1 || (columns === 3 && column === 1)) {
+    if (columns === 1) {
+      companion.classList.add(index % 2 === 0
+        ? "card-companion--edge-left"
+        : "card-companion--edge-right");
+    } else if (columns === 3 && column === 1) {
       companion.classList.add("card-companion--layout-hidden");
     } else if (column === 0) {
       companion.classList.add("card-companion--edge-left");

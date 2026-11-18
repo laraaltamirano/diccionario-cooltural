@@ -795,7 +795,7 @@ p {
   }
 
   .phrase-card--with-companion {
-    margin-top: 0;
+    margin-top: 5rem;
   }
 
   .card-companion {
@@ -826,11 +826,23 @@ p {
   }
 
   .card-companion--edge-left {
-    display: none;
+    display: block;
+    top: -32px;
+    right: auto;
+    left: 14px;
+    width: auto;
+    height: 112px;
+    --companion-x: 0%;
   }
 
   .card-companion--edge-right {
-    display: none;
+    display: block;
+    top: -32px;
+    right: 14px;
+    left: auto;
+    width: auto;
+    height: 112px;
+    --companion-x: 0%;
   }
 
   .about {
@@ -838,12 +850,17 @@ p {
   }
 
   .about::before {
-    top: 8%;
-    left: -30px;
+    top: -50px;
+    left: -65px;
+    width: 155px;
+    height: 155px;
   }
 
   .about::after {
-    right: -35px;
+    right: -65px;
+    bottom: -48px;
+    width: 150px;
+    height: 150px;
   }
 
   .site-footer {
