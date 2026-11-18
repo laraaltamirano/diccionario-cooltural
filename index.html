@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Diccionario visual de expresiones cotidianas en Guaraní y Jopara."
+    >
+
+    <title>Guaraní — Diccionario Cooltural</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&amp;family=Fredoka:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Volver al inicio">
+        <span>Diccionario</span>
+        <strong>Cooltural</strong>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#phrases">Frases</a>
+        <a href="#about">Sobre el proyecto</a>
+      </nav>
+
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Guaraní · Jopara · Paraguay</p>
+          <h1 id="hero-title">Hablá como <em>acá.</em></h1>
+          <p class="hero__tagline">
+            Guaraní y Jopara de todos los días<br>
+            Para turistas, curiosos <strong>(y locales que ndoikuaái)</strong>
+          </p>
+          <a class="primary-button" href="#phrases">Explorar frases</a>
+        </div>
+        <img
+          class="hero-character"
+          src="assets/piri-character.png"
+          alt="Personaje con sombrero piri saludando"
+        >
+      </section>
+
+      <section class="dictionary" id="phrases" aria-labelledby="dictionary-title">
+        <header class="section-heading">
+          <div>
+            <p class="eyebrow">Diccionario emocional</p>
+            <h2 id="dictionary-title">¿Cómo te sentís hoy?</h2>
+          </div>
+
+          <form class="search-form" role="search">
+            <label for="phrase-search">Buscar una palabra o significado</label>
+            <div class="search-form__field">
+              <input
+                id="phrase-search"
+                name="search"
+                type="search"
+                placeholder="Ej.: aguyje"
+                autocomplete="off"
+              >
+              <button type="submit">Buscar</button>
+            </div>
+          </form>
+        </header>
+
+        <div class="category-filters" aria-label="Filtrar frases por categoría">
+          <button type="button" class="filter-button is-active" data-category="all" aria-pressed="true">
+            Todas
+          </button>
+          <button type="button" class="filter-button" data-category="friendship" aria-pressed="false">
+            Amistad
+          </button>
+          <button type="button" class="filter-button" data-category="gratitude" aria-pressed="false">
+            Gratitud
+          </button>
+          <button type="button" class="filter-button" data-category="happiness" aria-pressed="false">
+            Felicidad
+          </button>
+          <button type="button" class="filter-button" data-category="anger" aria-pressed="false">
+            Enojo
+          </button>
+          <button type="button" class="filter-button" data-category="nostalgia" aria-pressed="false">
+            Nostalgia
+          </button>
+        </div>
+
+        <div class="phrase-grid" aria-live="polite">
+          <article class="phrase-card phrase-card--friendship phrase-card--with-companion" data-category="friendship">
+            <img class="card-companion card-companion--chipa card-companion--edge-left" src="assets/chipa.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Mba'eichapa</h3>
+              <p class="translation translation--es">Hola.</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-31"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-31" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Mba’eishapa</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Como saludo cotidiano.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Mba'e la porte</h3>
+              <p class="translation translation--es">¿Qué contás? ¿Qué tal?</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-1"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-1" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Como saludo informal entre amigos o personas de confianza.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Haupéi</h3>
+              <p class="translation translation--es">¿Qué tal? / ¿Y después?</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-6"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-6" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Jaupéi</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">
+                Depende del contexto. Puede utilizarse como saludo informal o como reclamo para preguntar qué pasó después.
+              </p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">
+                “Haupéi, ¿qué pasó con eso que dijiste que íbamos a hacer?”
+              </p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Ehendumina cheve</h3>
+              <p class="translation translation--es">Escuchame un poco. Escuchame, por favor.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-8">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-8" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Ejendumína sheve</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para pedirle a alguien que te preste atención.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">Estás hablando y tu amigo no te presta atención: “Ehendumina cheve.”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Jaha pues</h3>
+              <p class="translation translation--es">Vamos pues.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-9">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-9" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Yajá pues</p>
+                <p class="pronunciation__note">La <strong>j</strong> en guaraní suena como la <strong>y</strong>.</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Se usa en el día a día para invitar a alguien a ir acompañado a algún lugar.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship phrase-card--with-companion" data-category="friendship">
+            <img class="card-companion card-companion--terere card-companion--edge-right" src="assets/terere-happy.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Pio / piko</h3>
+              <p class="translation translation--es">Partícula interrogativa que añade énfasis.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-10">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-10" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Pió / pikó</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Convierte una frase en pregunta y le da énfasis.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">“¿No lo viste pio?” / “¿Cómo pio?”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Chera’a</h3>
+              <p class="translation translation--es">Mi amigo, mi socio o “bro”.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-11">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-11" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Shera’a</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Una forma coloquial y cercana de dirigirse a un amigo.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">“¿Cómo estás, chera’a?” / “Te quiero, chera’a.”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Gua’u</h3>
+              <p class="translation translation--es">Fingido, de mentira, de juguete o difícil de creer.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-12">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-12" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para señalar que algo es fingido, falso o poco creíble.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">“¿A quién gua’u le gusta eso?” / “Eso es de gua’u.”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--friendship" data-category="friendship">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Amistad</span>
+              <h3>Nde tavy</h3>
+              <p class="translation translation--es">¡Qué locura!</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-13">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-13" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__note">La <strong>y</strong> en guaraní suena como una <strong>u gutural</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Literalmente significa “estás loco”, pero se usa como expresión de asombro.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">“Bajaron los precios, nde tavy.”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--gratitude phrase-card--with-companion" data-category="gratitude">
+            <img class="card-companion card-companion--cocido card-companion--edge-left" src="assets/cocido.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Gratitud</span>
+              <h3>Aguyjevete</h3>
+              <p class="translation translation--es">Muchas gracias.</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-2"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-2" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Aguiyeveté</p>
+                <p class="pronunciation__note">La <strong>j</strong> en guaraní suena como la <strong>y</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para expresar un agradecimiento especialmente fuerte o sincero.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--gratitude phrase-card--long" data-category="gratitude">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Gratitud</span>
+              <h3>Tupa ndiveño ekua</h3>
+              <p class="translation translation--es">Andá con Dios.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-15">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-15" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Una despedida afectuosa que desea protección y bienestar.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--gratitude phrase-card--long" data-category="gratitude">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Gratitud</span>
+              <h3>Ndaha’ei mba’eve</h3>
+              <p class="translation translation--es">No es nada. De nada.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-16">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-16" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Ndaja’ei mba’eve</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Como respuesta a un “aguyjevete” o a un agradecimiento.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--gratitude phrase-card--long" data-category="gratitude">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Gratitud</span>
+              <h3>Ovalétereima</h3>
+              <p class="translation translation--es">Ya vale demasiado. Ya está perfecto.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-17">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-17" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Después de recibir un favor muy grande o cuando alguien ya hizo más que suficiente.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness" data-category="happiness">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Rohayhu</h3>
+              <p class="translation translation--es">Te amo.</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-3"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-3" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Rojaijú</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+                <p class="pronunciation__note">La <strong>y</strong> en guaraní suena como una <strong>u gutural</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para expresar amor o cariño hacia otra persona.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness phrase-card--with-companion" data-category="happiness">
+            <img class="card-companion card-companion--jazmin card-companion--edge-right" src="assets/jazmin.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Vy’apave</h3>
+              <p class="translation translation--es">No puedo estar más feliz.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-18">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-18" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para expresar un nivel máximo de felicidad.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness" data-category="happiness">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Chemopirimba</h3>
+              <p class="translation translation--es">Me dio piel de gallina.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-19">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-19" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Shemopirimbá</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Cuando algo te emociona o impresiona intensamente.</p>
+              <h4 class="example-heading">Ejemplo</h4>
+              <p class="detail-text detail-text--es">Acabás de ver una película increíble: “Chemopirimba.”</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness" data-category="happiness">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Iporaitéva</h3>
+              <p class="translation translation--es">¡Qué hermoso!</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-20">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-20" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Cuando algo sale perfecto, te parece hermoso y te produce satisfacción.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness" data-category="happiness">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Cherory</h3>
+              <p class="translation translation--es">Estoy demasiado feliz. Estoy de fiesta.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-21">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-21" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Sherory</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+                <p class="pronunciation__note">La <strong>y</strong> en guaraní suena como una <strong>u gutural</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Cuando estás tan feliz que se te nota en la cara.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--happiness phrase-card--with-companion" data-category="happiness">
+            <img class="card-companion card-companion--jazmin card-companion--edge-left" src="assets/jazmin-delighted.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Felicidad</span>
+              <h3>Avy’a nderehe</h3>
+              <p class="translation translation--es">Me alegro por vos.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-22">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-22" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Avy’a ndereje</p>
+                <p class="pronunciation__note">La <strong>y</strong> en guaraní suena como una <strong>u gutural</strong>.</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Después de que un amigo te cuenta una gran noticia.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--anger phrase-card--with-companion" data-category="anger">
+            <img class="card-companion card-companion--pitogue card-companion--edge-left" src="assets/pitogue-angry.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Enojo</span>
+              <h3>Ekañy</h3>
+              <p class="translation translation--es">Alejate. No molestes.</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-4"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-4" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Una expresión directa para pedirle a alguien que se aleje.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--anger phrase-card--with-companion" data-category="anger">
+            <img class="card-companion card-companion--terere card-companion--edge-right" src="assets/terere-angry.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Enojo</span>
+              <h3>Anichene</h3>
+              <p class="translation translation--es">No puede ser. Imposible.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-23">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-23" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Anishene</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Una expresión de sorpresa o incredulidad.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--anger" data-category="anger">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Enojo</span>
+              <span class="phrase-card__warning">Expresión grosera</span>
+              <h3>Mbore</h3>
+              <p class="translation translation--es">Persona mala / “Ni en pedo”.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-24">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-24" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Como adjetivo, describe a una persona mala o de malas actitudes. Como expresión, puede significar “ni en pedo”, “ni de pedo” o “ni de coña”.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--anger" data-category="anger">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Enojo</span>
+              <span class="phrase-card__warning">Expresión grosera</span>
+              <h3>Japiro</h3>
+              <p class="translation translation--es">No me importa / Andate a la mi*rda.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-25">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-25" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Yapiró</p>
+                <p class="pronunciation__note">La <strong>j</strong> en guaraní suena como la <strong>y</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Literalmente significa “pelar” o “desnudar”, pero coloquialmente se usa para mandar a alguien a la mierda, decir “no me importa” o “andate a cagar”.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--anger" data-category="anger">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Enojo</span>
+              <h3>Nde tarova</h3>
+              <p class="translation translation--es">Estás loco. Estás demente.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-26">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-26" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Entre risas puede ser coloquial y ligero. Dicho de forma seria, funciona como insulto.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--nostalgia phrase-card--with-companion" data-category="nostalgia">
+            <img class="card-companion card-companion--piri card-companion--edge-right" src="assets/piri-thoughtful.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Nostalgia</span>
+              <h3>Techaga’u</h3>
+              <p class="translation translation--es">Extrañar, nostalgia o añoranza.</p>
+              <button
+                type="button"
+                class="expand-button"
+                aria-expanded="false"
+                aria-controls="phrase-detail-5"
+              >
+                Ver significado
+              </button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-5" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Teshaga’u</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para hablar del sentimiento de extrañar a alguien, algo o algún lugar.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--nostalgia" data-category="nostalgia">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Nostalgia</span>
+              <h3>Chulina</h3>
+              <p class="translation translation--es">Expresión para algo tierno.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-27">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-27" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para reaccionar con cariño ante algo tierno o adorable.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--nostalgia phrase-card--with-companion" data-category="nostalgia">
+            <img class="card-companion card-companion--cocido card-companion--edge-right" src="assets/cocido-cozy.png" alt="" aria-hidden="true">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Nostalgia</span>
+              <h3>Haseta</h3>
+              <p class="translation translation--es">Va a llorar.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-28">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-28" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Jaseta</p>
+                <p class="pronunciation__note">La <strong>h</strong> en guaraní suena como la <strong>j</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Para decir que alguien está por llorar o se encuentra muy emocionado.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--nostalgia" data-category="nostalgia">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Nostalgia</span>
+              <h3>Ma’ena</h3>
+              <p class="translation translation--es">Mirá un poco. Ay, mi vida. Pobrecito/a.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-29">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-29" hidden>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Puede expresar ternura al ver algo dulce o pena al observar algo triste.</p>
+            </div>
+          </article>
+
+          <article class="phrase-card phrase-card--nostalgia phrase-card--long" data-category="nostalgia">
+            <div class="phrase-card__summary">
+              <span class="phrase-card__category">Nostalgia</span>
+              <h3>Aichinjaranga</h3>
+              <p class="translation translation--es">Expresión profunda de compasión o lástima.</p>
+              <button type="button" class="expand-button" aria-expanded="false" aria-controls="phrase-detail-30">Ver significado</button>
+            </div>
+            <div class="phrase-card__details" id="phrase-detail-30" hidden>
+              <div class="pronunciation">
+                <h4>Pronunciación aproximada</h4>
+                <p class="pronunciation__sound">Ashinyarangá</p>
+                <p class="pronunciation__note">La <strong>ch</strong> en guaraní suena como una <strong>sh</strong>.</p>
+                <p class="pronunciation__note">La <strong>j</strong> en guaraní suena como la <strong>y</strong>.</p>
+              </div>
+              <h4 class="usage-heading">Cuándo se usa</h4>
+              <p class="detail-text detail-text--es">Una expresión emotiva y profunda. “Anga” significa alma; la sensación podría entenderse como “me pesa el alma”.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-message" hidden>No encontramos una frase con esos filtros.</p>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">Sobre el proyecto</p>
+        <h2 id="about-title">Más que una traducción</h2>
+        <p>
+          El contenido de este proyecto parte de conocimiento personal del Guaraní y el Jopara utilizados en la vida cotidiana paraguaya. Las expresiones, significados y ejemplos fueron revisados mediante conversaciones informales con varios hablantes habituales, quienes ayudaron a confirmar su uso y contexto.
+        </p>
+        <p>
+          Este proyecto no pretende funcionar como un diccionario académico, sino como una guía cercana al lenguaje cotidiano.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Guaraní — Diccionario Cooltural</p>
+      <p class="site-footer__contact">
+        Para colaboraciones y sugerencias:
+        <a href="mailto:laraagini@gmail.com">laraagini@gmail.com</a>
+      </p>
+      <a href="#top">Volver arriba</a>
+    </footer>
+  </body>
+</html>
